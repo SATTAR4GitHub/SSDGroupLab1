@@ -1,0 +1,28 @@
+﻿@model IEnumerable<techloops.Models.Freelancer>
+
+@{
+    ViewData["Title"] = "Confirmation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="mb-5">Confirmation</h2>
+
+@if (Model.Any())
+{
+    <p class="mb-3">Hello @Model.Last().FirstName,</p>
+}
+
+<p>
+    Thank you for applying for the freelancer position with us, and here’s a confirmation that we have received
+    your application.  We always look forward to going through applications of great people who’d like to work with us
+    at Tech Loops.  One of our team members will review your application and will contact you if your application
+    meets all the criteria that we require.
+</p>
+<br>
+<p>
+    Kind Regards,
+</p>
+<p>
+    Loops Group of Companies <br> Canada.
+</p>
+

@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="mb-4">Admin Panel</h2>
+
+
+<div class="container row">
+    <div class="col-md-3 bg-info vh-100 p-0">
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="btn btn-link mt-4 mb-2" asp-area="" asp-controller="Clients" asp-action="Index"><i class="fas fa-users"></i> CONTACTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-link mb-2" asp-area="" asp-controller="Freelancers" asp-action="Index"><i class="fas fa-chalkboard-teacher"></i> FREELANCERS</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="col-md-9">
+        <h5 class="border-bottom"><i class="fas fa-chart-bar"></i> Dashboard</h5>
+    </div>
+</div>
+
+
+
+
