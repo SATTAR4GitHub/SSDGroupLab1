@@ -13,7 +13,7 @@ B. Creating Admin and Manager Account/Roles:
 
 2. Create Manager's account from the website: 
           email: manager@techloops.ca
-          password: manager@100
+          password: Manager@100
 
 3. Run the SQL script "RoleCreate.sql" in the SQL Server Management Studio
 
