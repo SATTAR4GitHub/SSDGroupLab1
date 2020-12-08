@@ -68,6 +68,7 @@ namespace techloops.Controllers
         }
 
         // GET: Clients/Details/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -130,7 +131,7 @@ namespace techloops.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,FirstName,LastName,Email")] Client client)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,FirstName,LastName,Email,Description")] Client client)
         {
             if (id != client.Id)
             {
